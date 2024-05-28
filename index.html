@@ -1,10 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Temp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grzeskiewicz Programmer</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    TEMP
+    <header class="social-banner">
+        <a href="https://www.linkedin.com/in/wiktor-grzeskiewicz-488454310/" target="_blank">
+			<img src="images/li-icon.png" width="55" height="55" alt="LinkedIn">
+			<img src="images/li-icon-active.png" class="img-top" width="55" height="55" alt="LinkedIn active">
+			<img src="images/li-icon-active-dark.png" class="img-top-dark" width="55" height="55" alt="LinkedIn active">
+		</a>
+        <a href="https://github.com/z123431wiktorgrzeski" target="_blank">
+			<img src="images/github-icon.png" width="55" height="55" alt="Github">
+			<img src="images/github-icon-active.png" class="img-top" width="55" height="55" alt="Github active">
+			<img src="images/github-icon-active-dark.png" class="img-top-dark" width="55" height="55" alt="Github active">
+		</a>
+        <a href="https://x.com/WiktorGrzeski" target="_blank">
+			<img src="images/tw-icon.png" width="55" height="55" alt="Twitter">
+			<img src="images/tw-icon-active.png" class="img-top" width="55" height="55" alt="Twitter active">
+			<img src="images/tw-icon-active-dark.png" class="img-top-dark" width="55" height="55" alt="Twitter active">
+		</a>
+    </header>
+    <header class="text-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand">Wiktor Grzeskiewicz</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <label for="dark-mode-toggle">Dark Mode</label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="snap-container">
+        <section id="profile" class="snap-section">
+            <div class="content">
+                <div class="photo"></div>
+                <div class="text-wrapper">
+					<h2>Profile</h2>
+					<p>Student developer with extensive knowledge of programming languages, web development, game devlopment, video editing and team leading.</p>
+				</div>
+            </div>
+        </section>
+        <section id="experience" class="snap-section">
+            <div class="content">
+                <div class="photo-container">
+					<div class="photo" style="background-image: url('images/pic2.jpg');"></div>
+					<div class="photo" style="background-image: url('images/pic3.jpg');"></div>
+				</div>
+				<div id="photoCarousel" class="carousel slide d-md-none" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="photo" style="background-image: url('images/pic2.jpg');"></div>
+						</div>
+						<div class="carousel-item">
+							<div class="photo" style="background-image: url('images/pic3.jpg');"></div>
+						</div>
+					</div>
+				</div>
+				<div class="text-wrapper">
+					<h2>Experience</h2>
+					<div class="job">
+						<h3>Exchange at a Japanese University</h3>
+						<p>Shibaura Institute of Technology</p>
+						<p>2023 - Present</p>
+						<p>Studied computer Science at renowned private University in Japan. Completed many IT projects including this site.</p>
+					</div>
+					<div class="job">
+						<h3>Video editing</h3>
+						<p>Many small projects</p>
+						<p>2013 - Present</p>
+						<p>Acquired a lot of editing and media related expertise while creating amatour videos, as well as short advertisments.</p>
+					</div>
+				</div>
+            </div>
+        </section>
+        <section id="education" class="snap-section">
+            <div class="content">
+				<div class="photo-container">
+					<div class="photo" style="background-image: url('images/pic4.jpg');"></div>
+					<div class="photo" style="background-image: url('images/pic5.jpg');"></div>
+				</div>
+				<div id="photoCarousel" class="carousel slide d-md-none" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="photo" style="background-image: url('images/pic4.jpg');"></div>
+						</div>
+						<div class="carousel-item">
+							<div class="photo" style="background-image: url('images/pic5.jpg');"></div>
+						</div>
+					</div>
+				</div>
+				<div class="text-wrapper">
+					<h2>Education</h2>
+					<div class="education">
+						<h3>Student of Computer Science</h3>
+						<p>Warsaw University of Life Sciences</p>
+						<p>2022 - Present</p>
+					</div>
+					<div class="education">
+						<h3>Exchange student in Japan</h3>
+						<p>Shibaura Institute of Technology</p>
+						<p>2023 - 2024</p>
+					</div>
+				</div>
+            </div>
+        </section>
+        <section id="skills" class="snap-section">
+            <div class="content">
+				<div class="skills-header">
+					<h2>Skills</h2>
+				</div>
+				<div class="skills-container">
+					<div class="text-wrapper">
+						<h3>Frontend</h3>
+						<ul>
+							<li>JavaScript</li>
+							<li>React</li>
+							<li>CSS</li>
+							<li>HTML</li>
+						</ul>
+					</div>
+					<div class="text-wrapper">
+						<h3>Backend</h3>
+						<ul>
+							<li>C/C++</li>
+							<li>C#</li>
+							<li>Rust</li>
+							<li>Python</li>
+						</ul>
+					</div>
+					<div class="text-wrapper">
+						<h3>Tools & Other</h3>
+						<ul>
+							<li>Sony Vegas</li>
+							<li>Unreal Engine</li>
+							<li>Unity</li>
+							<li>Adobe Suite</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+				<footer>
+					<a href="https://www.vecteezy.com/free-vector/instagram">Instagram Vectors by Vecteezy</a> <br>
+					<a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Dave Gandy - Flaticon</a>
+				</footer>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
