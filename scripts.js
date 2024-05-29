@@ -15,12 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Socials toggle
-    socialToggle.addEventListener('change', function () {
-        if (this.checked) {
-            socialBanner.style.display = 'inline';
-        } else {
-            socialBanner.style.display = 'none';
-        }
+    socialToggle.addEventListener("change", () => {
+        socialBanner.style.display = socialToggle.checked ? "inline" : "none";
     });
 
     // Check for previously saved mode in local storage

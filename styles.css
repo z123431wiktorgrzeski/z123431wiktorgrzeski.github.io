@@ -302,13 +302,6 @@ footer {
     margin-left: 10px;
 }
 
-/* Show social banner when toggle is checked */
-#social-toggle:checked ~ .social-banner {
-    display: inline;
-    justify-content: center;
-    gap: 10px;
-}
-
 /* Social banner link styles */
 .social-banner a {
     position: relative;
