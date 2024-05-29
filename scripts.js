@@ -1,10 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.getElementById("dark-mode-toggle");
     const navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const socialToggle = document.getElementById('social-toggle');
+    const socialBanner = document.querySelector('.social-banner');
 
+    // Dark mode as default
+    toggle.checked = true;
+    document.body.classList.add("dark-mode");
+
+    // Darkmode toggle
     toggle.addEventListener("change", () => {
         document.body.classList.toggle("dark-mode", toggle.checked);
         localStorage.setItem("dark-mode", toggle.checked);
+    });
+
+    // Socials toggle
+    socialToggle.addEventListener('change', function () {
+        if (this.checked) {
+            socialBanner.style.display = 'inline';
+        } else {
+            socialBanner.style.display = 'none';
+        }
     });
 
     // Check for previously saved mode in local storage
@@ -38,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         givenSection.classList.add('active');
     }
 
+    // Custom scroll checking which section is the closest
     document.addEventListener('wheel', (event) => {
         clearTimeout(isScrolling);
     

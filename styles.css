@@ -1,3 +1,4 @@
+/* Define default theme colors */
 :root {
     --background-color: #ffffff;
     --text-color: #000000;
@@ -7,6 +8,7 @@
     --accent-color: #007bff;
 }
 
+/* Define dark mode theme colors */
 body.dark-mode {
     --background-color: #121212;
     --text-color: #ffffff;
@@ -15,6 +17,8 @@ body.dark-mode {
     --link-color: #8ab4f8;
     --accent-color: darkorange;
 }
+
+/* Navbar styles for dark mode */
 body.dark-mode .navbar,
 body.dark-mode .navbar-nav,
 body.dark-mode .navbar-collapse {
@@ -25,24 +29,34 @@ body.dark-mode .navbar .nav-link,
 body.dark-mode .navbar .navbar-brand {
     color: white !important;
 }
+
+/* Content styles for dark mode */
 body.dark-mode .content {
     background-color: transparent;
 }
 
+/* Center form inline elements */
+.form-inline {
+    justify-content: center;
+}
+
+/* Basic body styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
-    overflow-x: hidden;
-    overflow-y: hidden; /* prevent default scrolling behavior */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-y: hidden; /* Prevent vertical scroll */
 }
 
+/* Heading color */
 h2 {
     color: var(--accent-color);
 }
 
+/* Header styles */
 header {
     text-align: center;
     background-color: var(--header-background);
@@ -53,19 +67,23 @@ header {
     z-index: 1;
 }
 
-.toggle-switch {
+/* Toggle switch and social switch container styles */
+.toggle-switch, .social-switch {
     display: flex;
     align-items: center;
 }
 
-.toggle-switch input {
+/* Toggle switch input styles */
+.toggle-switch input, .social-switch input {
     margin-right: 5px;
 }
 
-.toggle-switch label {
+/* Toggle switch label styles */
+.toggle-switch label, .social-switch label {
     margin-bottom: 0;
 }
 
+/* Snap scrolling container styles */
 .snap-container {
     scroll-snap-type: y mandatory;
     height: 100vh;
@@ -73,6 +91,7 @@ header {
     position: relative;
 }
 
+/* Snap section styles */
 .snap-section {
     position: relative;
     width: 100vw;
@@ -88,6 +107,7 @@ header {
     background-repeat: no-repeat;
 }
 
+/* Background images for different sections */
 #profile {
     background-image: url('images/bg1.png');
 }
@@ -108,6 +128,7 @@ header {
     position: relative;
 }
 
+/* Content container styles */
 .content {
     position: relative;
     width: 100%;
@@ -121,6 +142,7 @@ header {
     border-radius: 10px;
 }
 
+/* Skills header styles */
 .skills-header {
     text-align: center;
     margin-bottom: 40px;
@@ -129,9 +151,35 @@ header {
     padding: 20px;
 }
 
+/* Skills header styles for dark mode */
 body.dark-mode .skills-header {
     background: rgba(51, 51, 51, 0.8);
     color: white;
+}
+
+/* Skills container styles */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Skills text wrapper styles */
+#skills .text-wrapper {
+    margin-right: 10px;
+    font-size: large;
+}
+
+/* Skills section heading styles */
+#skills .text-wrapper h3 {
+    color: var(--accent-color);
+    font-size: 2em;
+}
+
+/* Skills list styles */
+#skills .text-wrapper ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 .skills-header h2 {
@@ -139,32 +187,12 @@ body.dark-mode .skills-header {
     font-weight: bold;
 }
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-#skills .text-wrapper {
-    margin-right: 10px;
-    font-size: large;
-}
-
-#skills .text-wrapper h3 {
-    color: var(--accent-color);
-    font-size: 2em;
-}
-
-#skills .text-wrapper ul {
-    list-style-type: none;
-    padding: 0;
-}
-
 #skills .text-wrapper ul li {
     padding: 5px 0;
     font-size: 1.1em;
 }
 
+/* Profile photo styles */
 #profile .photo {
     width: 150px;
     height: 150px;
@@ -176,74 +204,88 @@ body.dark-mode .skills-header {
     margin-bottom: 20px;
 }
 
+/* Photo container styles */
 .photo-container {
     display: flex;
     justify-content: space-around;
 }
 
+/* Individual photo styles */
 .photo-container .photo {
     width: 304px;
     height: 208px;
     margin-right: 20px;
-    background-color: #ddd; /* Placeholder background color */
+    background-color: #ddd;
     border-radius: 15px;
     background-size: cover;
     background-position: center;
 }
 
+/* Carousel photo styles */
 .carousel .photo {
     width: 304px;
     height: 208px;
-    margin:auto;
-    background-color: #ddd; /* Placeholder background color */
+    margin: auto;
+    background-color: #ddd;
     border-radius: 15px;
     background-size: cover;
     background-position: center;
 }
 
+/* Margins for photo container and carousel */
 .photo-container, .carousel {
     margin-bottom: 10px;
 }
 
+/* Navbar padding */
 .navbar {
     padding: 10px;
 }
 
+/* Navbar brand styles */
 .navbar-brand {
     font-weight: bold;
 }
 
+/* Navbar link styles */
 .navbar-nav .nav-link {
     color: var(--link-color);
     margin-right: 15px;
 }
 
+/* Active navbar link styles */
 .navbar .nav-link.active {
     font-weight: bold;
     color: #007bff !important;
 }
 
+/* Active navbar link styles for dark mode */
 body.dark-mode .navbar .nav-link.active {
     font-weight: bold;
     color: darkorange !important;
 }
 
+/* Text wrapper background styles */
 .text-wrapper {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
     padding: 20px;
 }
 
+/* Text wrapper background styles for dark mode */
 body.dark-mode .text-wrapper {
     background: rgba(51, 51, 51, 0.8);
     color: white;
 }
+
+/* Footer styles */
 footer {
     bottom: 0;
     font-size: xx-small;
     position: absolute;
 }
 
+/* Social banner styles */
 .social-banner {
     position: fixed;
     top: 50%;
@@ -254,6 +296,20 @@ footer {
     border-radius: 0 10px 10px 0;
 }
 
+/* Social switch display settings */
+.social-switch {
+    display: none;
+    margin-left: 10px;
+}
+
+/* Show social banner when toggle is checked */
+#social-toggle:checked ~ .social-banner {
+    display: inline;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Social banner link styles */
 .social-banner a {
     position: relative;
     display: block;
@@ -262,26 +318,28 @@ footer {
     margin: 10px 0;
 }
 
+/* Social banner image styles */
 .social-banner a .img-top, .social-banner a .img-top-dark {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
 }
 
+/* Show hover images on hover */
 .social-banner a:hover .img-top,
 body.dark-mode .social-banner a:hover .img-top-dark {
     display: inline;
 }
 
-
+/* Scale image on active */
 .social-banner a:active .img-top,
 body.dark-mode .social-banner a:active .img-top-dark {
     scale: 115%;
 }
 
-/* Responsive Styles */
+/* Responsive styles for smaller screens */
 @media (max-width: 768px) {
     header {
         padding: 10px;
@@ -291,10 +349,17 @@ body.dark-mode .social-banner a:active .img-top-dark {
         justify-content: center;
     }
 
+    /* Display socials switch on smaller screens */
+    .social-switch {
+        display: flex;
+    }
+
+    /* Hide social banner on smaller screens by default */
     .social-banner {
         display: none;
     }
 
+    /* Stack top banner elements vertically on smaller screens */
     .top-banner {
         flex-direction: column;
     }
@@ -303,21 +368,25 @@ body.dark-mode .social-banner a:active .img-top-dark {
         margin: 5px 0;
     }
 
+    /* Hide photo container on smaller screens to see carousel intead*/
     .photo-container {
         display: none;
     }
 
     #skills .text-wrapper {
-        flex: 1 1 100%;
+        flex: 1 1 45%;
         max-width: 90%;
     }
+
+    /* Adjust margin to fit all the content on smaller screens */
     .skills-header {
         margin-bottom: 0;
     }
-    .skills-header h2 {
-        font-size: 2em;
-    }
-    #skills .text-wrapper h3 {
-        font-size: 1em;
+}
+
+/* Display social banner on larger screens */
+@media (min-width: 768px) {
+    .social-banner {
+        display: inline;
     }
 }

@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grzeskiewicz Programmer</title>
+	<!-- Bootstrap CSS for styling -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<!-- Social banner for displaying social media links -->
     <header class="social-banner">
         <a href="https://www.linkedin.com/in/wiktor-grzeskiewicz-488454310/" target="_blank">
 			<img src="images/li-icon.png" width="55" height="55" alt="LinkedIn">
@@ -25,6 +27,7 @@
 			<img src="images/tw-icon-active-dark.png" class="img-top-dark" width="55" height="55" alt="Twitter active">
 		</a>
     </header>
+	<!-- Main header with navigation bar -->
     <header class="text-center">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <a class="navbar-brand">Wiktor Grzeskiewicz</a>
@@ -33,6 +36,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
+					<!-- Navigation links to different sections of the page -->
                     <li class="nav-item">
                         <a class="nav-link" href="#profile">Profile</a>
                     </li>
@@ -46,16 +50,22 @@
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
                 </ul>
+				<!-- Toggle switches for dark mode and showing social banner -->
                 <div class="form-inline my-2 my-lg-0">
                     <div class="toggle-switch">
                         <input type="checkbox" id="dark-mode-toggle">
                         <label for="dark-mode-toggle">Dark Mode</label>
+                    </div>
+					<div class="social-switch">
+                        <input type="checkbox" id="social-toggle">
+                        <label for="social-toggle">Show Socials</label>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main class="snap-container">
+		<!-- Profile section -->
         <section id="profile" class="snap-section">
             <div class="content">
                 <div class="photo"></div>
@@ -65,12 +75,15 @@
 				</div>
             </div>
         </section>
+		<!-- Experience section -->
         <section id="experience" class="snap-section">
             <div class="content">
+				<!-- container for bigger screens -->
                 <div class="photo-container">
 					<div class="photo" style="background-image: url('images/pic2.jpg');"></div>
 					<div class="photo" style="background-image: url('images/pic3.jpg');"></div>
 				</div>
+				<!-- Carousel for smaller screens -->
 				<div id="photoCarousel" class="carousel slide d-md-none" data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
@@ -98,12 +111,15 @@
 				</div>
             </div>
         </section>
+		<!-- Education section -->
         <section id="education" class="snap-section">
             <div class="content">
+				<!-- container for bigger screens -->
 				<div class="photo-container">
 					<div class="photo" style="background-image: url('images/pic4.jpg');"></div>
 					<div class="photo" style="background-image: url('images/pic5.jpg');"></div>
 				</div>
+				<!-- Carousel for smaller screens -->
 				<div id="photoCarousel" class="carousel slide d-md-none" data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
@@ -129,6 +145,7 @@
 				</div>
             </div>
         </section>
+		<!-- Skills section -->
         <section id="skills" class="snap-section">
             <div class="content">
 				<div class="skills-header">
@@ -164,6 +181,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- Footer with attribution links -->
 				<footer>
 					<a href="https://www.vecteezy.com/free-vector/instagram">Instagram Vectors by Vecteezy</a> <br>
 					<a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Dave Gandy - Flaticon</a>
@@ -171,9 +189,11 @@
             </div>
         </section>
     </main>
+	<!-- jQuery and Bootstrap JavaScript files -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+    <!-- Custom JavaScript file -->
+	<script src="scripts.js"></script>
 </body>
 </html>
