@@ -367,7 +367,7 @@ body.dark-mode .social-banner a:active .img-top-dark {
     }
 
     #skills .text-wrapper {
-        flex: 1 1 45%;
+        flex: 1 1 auto;
         max-width: 90%;
     }
 
