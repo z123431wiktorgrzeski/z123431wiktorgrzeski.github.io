@@ -369,6 +369,7 @@ body.dark-mode .social-banner a:active .img-top-dark {
     #skills .text-wrapper {
         flex: 1 1 auto;
         max-width: 90%;
+        font-size: 0.9em;
     }
 
     /* Adjust margin to fit all the content on smaller screens */
